@@ -1,0 +1,250 @@
+---
+title: "ARISE GIMME"
+author: "Kevin Kuehn"
+date: "2/5/2020"
+output: html_document
+---
+
+```{r}
+data.3<-read.csv('~/arise.gimme.csv')
+
+vars<-c("PID", "fear", "sad", "shame", "anger", "guilt", "SI.intent.30")
+
+data.3<-data.3[vars]
+
+data.3$SI.intent.binary<-data.3$SI.intent.30
+data.3$SI.intent.binary[data.3$SI.intent.30>=1]<-1
+
+data.3$SI.intent.30<-NULL
+
+spt2 <- split(data.3, data.3$PID)
+
+ID1<-spt2[[1]]
+ID2<-spt2[[2]]
+ID3<-spt2[[3]]
+ID4<-spt2[[4]]
+ID5<-spt2[[5]]
+ID6<-spt2[[6]]
+ID7<-spt2[[7]]
+ID8<-spt2[[8]]
+ID9<-spt2[[9]]
+ID10<-spt2[[10]]
+ID11<-spt2[[11]]
+ID12<-spt2[[12]]
+ID13<-spt2[[13]]
+ID14<-spt2[[14]]
+ID15<-spt2[[15]]
+ID16<-spt2[[16]]
+ID17<-spt2[[17]]
+ID18<-spt2[[18]]
+ID19<-spt2[[19]]
+ID20<-spt2[[20]]
+ID21<-spt2[[21]]
+ID22<-spt2[[22]]
+ID23<-spt2[[23]]
+ID24<-spt2[[24]]
+ID25<-spt2[[25]]
+ID26<-spt2[[26]]
+ID27<-spt2[[27]]
+ID28<-spt2[[28]]
+ID29<-spt2[[29]]
+ID30<-spt2[[30]]
+ID31<-spt2[[31]]
+ID32<-spt2[[32]]
+ID33<-spt2[[33]]
+ID34<-spt2[[34]]
+ID35<-spt2[[35]]
+ID36<-spt2[[36]]
+ID37<-spt2[[37]]
+ID38<-spt2[[38]]
+ID39<-spt2[[39]]
+ID40<-spt2[[40]]
+ID41<-spt2[[41]]
+ID42<-spt2[[42]]
+ID43<-spt2[[43]]
+ID44<-spt2[[44]]
+ID45<-spt2[[45]]
+ID46<-spt2[[46]]
+ID47<-spt2[[47]]
+ID48<-spt2[[48]]
+ID49<-spt2[[49]]
+ID50<-spt2[[50]]
+ID51<-spt2[[51]]
+ID52<-spt2[[52]]
+ID53<-spt2[[53]]
+ID54<-spt2[[54]]
+ID55<-spt2[[55]]
+ID56<-spt2[[56]]
+ID57<-spt2[[57]]
+ID58<-spt2[[58]]
+ID59<-spt2[[59]]
+ID60<-spt2[[60]]
+
+ID1<-ID1[-1]
+ID2<-ID2[-1]
+ID3<-ID3[-1]   
+ID4<-ID4[-1]   
+ID5<-ID5[-1]   
+ID6<-ID6[-1]  
+ID7<-ID7[-1]   
+ID8<-ID8[-1]  
+ID9<-ID9[-1]  
+ID10<-ID10[-1]  
+ID11<-ID11[-1]  
+ID12<-ID12[-1]
+ID13<-ID13[-1]  
+ID14<-ID14[-1]  
+ID15<-ID15[-1]  
+ID16<-ID16[-1]  
+ID17<-ID17[-1]  
+ID18<-ID18[-1]
+ID19<-ID19[-1]  
+ID20<-ID20[-1]  
+ID21<-ID21[-1] 
+ID22<-ID22[-1] 
+ID23<-ID23[-1] 
+ID24<-ID24[-1]
+ID25<-ID25[-1]  
+ID26<-ID26[-1]  
+ID27<-ID27[-1]  
+ID28<-ID28[-1]  
+ID29<-ID29[-1] 
+ID30<-ID30[-1]
+ID31<-ID31[-1]  
+ID32<-ID32[-1] 
+ID33<-ID33[-1]
+ID34<-ID34[-1]
+ID35<-ID35[-1] 
+ID36<-ID36[-1]
+ID37<-ID37[-1]
+ID38<-ID38[-1]
+ID39<-ID39[-1]
+ID40<-ID40[-1]
+ID41<-ID41[-1]
+ID42<-ID42[-1]
+ID43<-ID43[-1]
+ID44<-ID44[-1]
+ID45<-ID45[-1]
+ID46<-ID46[-1]
+ID47<-ID47[-1]
+ID48<-ID48[-1]
+ID49<-ID49[-1]
+ID50<-ID50[-1]
+ID51<-ID51[-1]
+ID52<-ID52[-1]
+ID53<-ID53[-1]
+ID54<-ID54[-1]
+ID55<-ID55[-1]
+ID56<-ID56[-1]
+ID57<-ID57[-1]
+ID58<-ID58[-1]
+ID59<-ID59[-1]
+ID60<-ID60[-1]
+
+setwd('/Users/kevinkuehn/ARISE/GIMME/')
+
+write.table(ID1, file = "ID1.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID3, file = "ID3.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID4, file = "ID4.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID5, file = "ID5.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID8, file = "ID8.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID9, file = "ID9.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID13, file = "ID13.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID14, file = "ID14.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID15, file = "ID15.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID17, file = "ID17.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID18, file = "ID18.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID19, file = "ID19.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID20, file = "ID20.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID22, file = "ID22.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID24, file = "ID24.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID25, file = "ID25.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID27, file = "ID27.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID28, file = "ID28.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID30, file = "ID30.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID37, file = "ID37.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID41, file = "ID41.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID45, file = "ID45.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID47, file = "ID47.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID48, file = "ID48.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID54, file = "ID54.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID56, file = "ID56.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID57, file = "ID57.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID58, file = "ID58.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+write.table(ID59, file = "ID59.txt", sep = " ",
+            row.names = FALSE, col.names = TRUE)
+```
+
+```{r}
+gimmeSEM(data = "/Users/kevinkuehn/ARISE/GIMME/",
+         out = "/Users/kevinkuehn/ARISE/GIMME output.25",
+         header = TRUE,
+         ar = TRUE,
+         plot = TRUE,
+         sep = "",
+         subgroup = FALSE,
+         standardize = TRUE,
+         paths = NULL,
+         groupcutoff = .25)
+
+gimmeSEM(data = "/Users/kevinkuehn/ARISE/GIMME/",
+         out = "/Users/kevinkuehn/ARISE/GIMME output.375",
+         header = TRUE,
+         ar = TRUE,
+         plot = TRUE,
+         sep = "",
+         subgroup = FALSE,
+         standardize = TRUE,
+         paths = NULL,
+         groupcutoff = .375)
+
+gimmeSEM(data = "/Users/kevinkuehn/ARISE/GIMME/",
+         out = "/Users/kevinkuehn/ARISE/GIMME output.5",
+         header = TRUE,
+         ar = TRUE,
+         plot = TRUE,
+         sep = "",
+         subgroup = FALSE,
+         standardize = TRUE,
+         paths = NULL,
+         groupcutoff = .5)
+
+gimmeSEM(data = "/Users/kevinkuehn/ARISE/GIMME/",
+         out = "/Users/kevinkuehn/ARISE/GIMME output.75",
+         header = TRUE,
+         ar = TRUE,
+         plot = TRUE,
+         sep = "",
+         subgroup = FALSE,
+         standardize = TRUE,
+         paths = NULL,
+         groupcutoff = .75)
+```
