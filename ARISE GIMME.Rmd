@@ -6,6 +6,10 @@ output: html_document
 ---
 
 ```{r}
+library(gimme)
+```
+
+```{r}
 data.3<-read.csv('~/arise.gimme.csv')
 
 vars<-c("PID", "fear", "sad", "shame", "anger", "guilt", "SI.intent.30")
